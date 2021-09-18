@@ -23,6 +23,12 @@
    console.log(a); //1
    ````
 
+   ```javascript
+   var a = 1;
+   var a = undefined;
+   console.log(a); //undefined
+   ```
+
    ```js
    var a = 1;
    var a = 2;
@@ -53,7 +59,6 @@
    test(); //执行到这里的时候，函数内a = 1;会报错
    ```
    
-
 3. 直接调用一个未被声明过的变量，会报错。(typeof除外)
 
    ```js

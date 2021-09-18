@@ -1,16 +1,55 @@
 # ES6_6_async_await
 
+重点记录：
+
+* `async`用于定义一个异步函数。
+
+* **`async`函数返回一个 Promise 对象，正常用then第一个回调函数接，throw出错误用第二个参数或则catch接**
+
+  ```javascript
+  async function test() {
+    return 11;
+  }
+  test().then(console.log); //11
+  ```
+
+  ```javascript
+  async function test() {
+    return new Error('err');
+  }
+  test().then(err => console.log(err.message)); //"err"
+  ```
+
+  ```javascript
+  async function test() {
+    throw new Error('err');
+  }
+  test().then(
+    () => console.log('不会被执行'),
+    err => console.log(err.message) //"err"
+  ); 
+  ```
+
+  ```javascript
+  async function test() {
+    throw new Error('err');
+  }
+  test().then(() => console.log('不会被执行')).catch(err => console.log(err.message)); //"err"
+  ```
+
+* **`await` 只在异步函数里面才起作用。**
+
 MDN参考文档：https://developer.mozilla.org/zh-CN/docs/Learn/JavaScript/Asynchronous/Async_await#%E4%BD%BF%E7%94%A8_asyncawait_%E9%87%8D%E5%86%99_promise_%E4%BB%A3%E7%A0%81
 
 阮一峰参考文档：https://es6.ruanyifeng.com/#docs/async
 
-**简单来说，它们是基于promises的语法糖，使异步代码更易于编写和阅读。**
+**简单来说，它们是基于promises的语法糖，使异步代码更易于编写和阅读。**它们是**ECMAScript 2017** JavaScript版的一部分.
 
-## async关键字
+
 
 **`async`函数返回一个 Promise 对象。**
 
-async的几种 写法：
+async的几种写法：
 
 ```javascript
 async function hello() { return "Hello" };
@@ -24,7 +63,7 @@ let hello = async function() { return "Hello" };
 let hello = async () => { return "Hello" };
 ```
 
-```javascript
+```typescript
 private async hello() {
 	return "Hello";
 }
