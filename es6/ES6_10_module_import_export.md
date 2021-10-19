@@ -11,7 +11,7 @@
 * `import`命令具有提升效果，会提升到整个模块的头部首先执行。
 * 由于`import`是静态执行，所以不能使用表达式和变量，这些只有在运行时才能得到结果的语法结构。
 * `import`语句是 Singleton 模式，也就是说不管import多少次，实际上被import的那个模块只会执行一次。
-* 一个moudle文件只允许一个default存在。
+* 一个module文件只允许一个default存在。
 
 
 
@@ -118,7 +118,7 @@ export default function test() {
 }
 
 //import.js
-import test from './test';
+import test2222 from './test';
 test() {
   test();
 },
