@@ -315,7 +315,7 @@ catch方法是then(undefined, rejection)的别名，用于指定发生错误时�
 ```javascript
 function test1() {
   return new Promise((resolve, reject) => {
-    throw new Error('error message');
+     throw new Error('error message');
      console.log('我是不会被执行到的');   //不会执行
   });
 }

@@ -16,7 +16,7 @@ data['[object HTMLDivElement]'] // "metadata"
 
 
 
-####定义一个Set
+####定义一个Map
 
 没有参数，使用`set`添加值。
 
@@ -81,8 +81,6 @@ const m = new Map([
 ]);
 console.log(m.size); //2
 ```
-
-
 
 
 

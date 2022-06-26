@@ -316,6 +316,8 @@ let x;
    ```
 
    
+   
+6. var会与window相映射（会挂一个属性），而let不与window相映射。
 
 ## 块级作用域
 
@@ -534,7 +536,7 @@ let x;
    a = ['Dave'];    // 报错
    ```
 
-   如果真的想将对象冻结，应该使用`Object.freeze`方法。
+   **如果真的想将对象冻结，应该使用`Object.freeze`方法。**
 
    ```javascript
    const foo = Object.freeze({});
