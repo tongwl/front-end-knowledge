@@ -56,3 +56,5 @@ Google 字体库是一个免费的 Web 字体库，我们只需要在 CSS 里设
 ```
 
 我们可以把上述的woff / woff2文件下载到本地，然后写好上述代码即可。
+
+> 参考[css @font-face自定义字体](https://github.com/tongwl/front-end-knowledge/blob/main/%E5%89%8D%E7%AB%AF%E6%8A%80%E5%B7%A7/css%E5%8A%A0%E8%BD%BD%E5%AD%97%E4%BD%93.md)
