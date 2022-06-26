@@ -11,40 +11,36 @@
 * 9.颜色表示法
 * 10.使用CSS自定义属性（变量）
 * 11 :root 伪类选择器
-* 12. ~~媒体查询~~
-  13. 
+* 12 ~~媒体查询~~
+* 13 
 
 
 
 
 
-## 1.css引入外部字体
+## 1. css引入外部字体
 
 以下以引入google字体为例子。
 
 [Google 字体库](https://fonts.google.com/)是一个免费的 Web 字体库，我们只需要在 CSS 里设置字体的 URL 即可使用。
 
-要引入 Google Font，你需要从 Google Fonts 上复制字体的 URL，并粘贴到你的 HTML 里面。 在这个挑战中，我们需要引入 `Lobster` 字体。 因此，请复制以下代码段，并粘贴到代码编辑器顶部，即放到 `style` 标签之前。
+要引入 Google Font，你需要从 Google Fonts 上复制字体的 URL，并粘贴到你的 HTML 里面。 在这个例子中，我们需要引入 `Lobster` 字体。 因此，请复制以下代码段，并粘贴到代码编辑器顶部，即放到 `style` 标签之前。
 
 ```html
 <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
 ```
 
-
-
-## 2.font-family说明
+## 2. font-family说明
 
 ```css
 font-family: FAMILY_NAME, GENERIC_NAME;
 ```
-
 * GENERIC_NAME 是可选的，它用来指明在其他字体不可用时的后备字体。
 * 如果字体名含有空格，则在声明时需要用引号包起来。 例如，使用 `"Open Sans"` 字体需要添加引号，而 `Lobster` 则不需要。
 * 所有浏览器都有几种默认字体， 包括 `monospace`、`serif` 和 `sans-serif`。
 
 
-
-## 3.border说明
+## 3. border说明
 
 MDN参考：https://developer.mozilla.org/zh-CN/docs/Web/CSS/border
 
